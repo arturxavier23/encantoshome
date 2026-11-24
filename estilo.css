@@ -1,0 +1,84 @@
+/* Encantos — catálogo
+   Layout: faixa verde da marca com o logo, filtros fixos, vitrine em grade de peças; painel de gestão em folha cheia */
+:root {
+  --oliva: #5c673d;
+  --oliva-escuro: #4a5331;
+  --creme: #f6f3ee;
+  --papel: #fffdfa;
+  --terracota: #96452f;
+  --tinta: #2e2a24;
+  --suave: #6f675d;
+  --linha: #e4ddd2;
+  --foto: #efe9df;
+  --zap: #2f7a4f;
+  --perigo: #a3352a;
+  --sombra: rgba(46, 42, 36, 0.18);
+  --display: "Cormorant Garamond", "Cormorant", Garamond, "Times New Roman", serif;
+  --texto: "Jost", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --oliva: #4b5532; --oliva-escuro: #3c4428; --creme: #1d1f17; --papel: #262920;
+  --terracota: #d58a70; --tinta: #efe8dc; --suave: #b3ab9d; --linha: #3a3d31; --foto: #30332a; --zap: #5cb884;
+  --perigo: #e0786c; --sombra: rgba(0, 0, 0, 0.5);
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --oliva: #4b5532; --oliva-escuro: #3c4428; --creme: #1d1f17; --papel: #262920;
+  --terracota: #d58a70; --tinta: #efe8dc; --suave: #b3ab9d; --linha: #3a3d31; --foto: #30332a; --zap: #5cb884;
+  --perigo: #e0786c; --sombra: rgba(0, 0, 0, 0.5);
+  color-scheme: dark }
+
+html { -webkit-text-size-adjust: 100%; }
+* { box-sizing: border-box; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+body { margin: 0; padding-top: env(safe-area-inset-top, 0px); background: var(--creme); color: var(--tinta); font-family: var(--texto); font-size: 15px; line-height: 1.55; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--oliva); }
+.gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 1080px; margin: 0 auto; }
+
+header.marca { background: var(--oliva); color: #f6f3ee; text-align: center; padding-block: 36px 30px; }
+header.marca img { width: min(300px, 72vw); height: auto; display: block; margin: 0 auto 18px; }
+header.marca p { margin: 0 auto; max-width: 34ch; font-family: var(--display); font-style: italic; font-size: 1.35rem; line-height: 1.3; color: #ece6d8; }
+
+.filtros { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--creme); border-bottom: 1px solid var(--linha); padding-block: 12px; }
+.filtros .wrap { display: flex; flex-direction: column; gap: 10px; }
+.chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; font: 500 0.82rem var(--texto); letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--linha); background: var(--papel); color: var(--suave); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--terracota); border-color: var(--terracota); color: var(--papel); }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, a:focus-visible { outline: 2px solid var(--terracota); outline-offset: 2px; }
+.busca input { width: 100%; box-sizing: border-box; font: 400 0.95rem var(--texto); padding: 10px 14px; border-radius: 10px; border: 1px solid var(--linha); background: var(--papel); color: var(--tinta); }
+.busca input::placeholder { color: var(--suave); }
+
+main { padding-block: 22px 40px; }
+.secao { margin-bottom: 34px; }
+.secao h2 { font-family: var(--display); font-weight: 600; font-size: 1.9rem; color: var(--terracota); margin: 0 0 14px; display: flex; align-items: baseline; gap: 10px; text-wrap: balance; }
+.secao h2 small { font-family: var(--texto); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--suave); font-weight: 400; }
+.grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 18px; }
+@media (max-width: 480px) { .grade { grid-template-columns: 1fr 1fr; gap: 12px; } }
+
+.peca { background: var(--papel); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--linha); min-width: 0; }
+.foto { aspect-ratio: 6 / 5; max-width: 100%; background: var(--foto); display: grid; place-items: center; position: relative; overflow: hidden; }
+.foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.foto.inteira img { object-fit: contain; }
+.foto.inteira img.fundo { object-fit: cover; filter: blur(18px) saturate(0.9); transform: scale(1.15); opacity: 0.85; }
+.foto .sem { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--suave); }
+.cod { position: absolute; top: 10px; left: 10px; font: 500 0.7rem var(--texto); letter-spacing: 0.08em; background: var(--papel); color: var(--suave); padding: 3px 8px; border-radius: 999px; font-variant-numeric: tabular-nums; z-index: 1; }
+.info { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.info h3 { font-family: var(--display); font-weight: 600; font-size: 1.25rem; line-height: 1.15; margin: 0; }
+.info p { margin: -4px 0 0; font-size: 0.85rem; color: var(--suave); }
+.pedir { margin-top: auto; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font: 500 0.85rem var(--texto); color: var(--zap); border: 1px solid currentColor; border-radius: 10px; padding: 9px 10px; text-align: center; }
+.pedir:hover { background: var(--zap); color: var(--papel); }
+.pedir svg { width: 16px; height: 16px; flex: none; }
+.vazio { text-align: center; color: var(--suave); padding: 40px 0; }
+
+footer { background: var(--oliva-escuro); color: #ece6d8; text-align: center; padding-block: 32px; }
+footer .wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+footer h2 { font-family: var(--display); font-weight: 500; font-size: 1.6rem; margin: 0; color: #f6f3ee; }
+footer p { margin: 0; max-width: 40ch; font-size: 0.9rem; }
+.numero { font: 500 1.15rem var(--texto); letter-spacing: 0.04em; user-select: all; font-variant-numeric: tabular-nums; color: #f6f3ee; }
+.acoes { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.acoes a, .acoes button { font: 500 0.85rem var(--texto); padding: 10px 16px; border-radius: 10px; border: 1px solid #ece6d8; background: transparent; color: #f6f3ee; text-decoration: none; cursor: pointer; }
+.acoes a { background: #f6f3ee; color: #4a5331; }
+@media (prefers-reduced-motion: no-preference) { .peca { transition: transform .2s ease; } .peca:hover { transform: translateY(-2px); } }
+

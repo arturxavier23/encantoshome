@@ -1,0 +1,74 @@
+CATÁLOGO ENCANTOS HOME — SITE COM PAINEL DE ADMINISTRAÇÃO
+==========================================================
+
+Como funciona
+- O site fica guardado num repositório do GitHub.
+- O Netlify publica o site sozinho sempre que o repositório muda.
+- O painel em  SEU-SITE/admin  edita as peças (foto, nome, categoria, descrição)
+  e salva direto no GitHub. Em 1–2 minutos a mudança está no ar.
+
+Arquivos
+- index.html, estilo.css, app.js ... a página
+- pecas.json ....................... lista de peças (o painel edita este arquivo)
+- fotos/ ........................... fotos das peças
+- img/ ............................. logo, ícone e imagem de compartilhamento
+- admin/ ........................... painel de administração (Decap CMS)
+
+------------------------------------------------------------
+CONFIGURAÇÃO (uma vez só — ~20 minutos)
+------------------------------------------------------------
+1) GITHUB — guardar o site
+   a. Crie um repositório (ex.: encantoshome). Pode ser privado.
+   b. Envie o conteúdo desta pasta para a branch "main" (index.html na raiz).
+   c. Abra admin/config.yml e troque  USUARIO/REPOSITORIO  pelo seu,
+      ex.: arturxavier/encantoshome. Faça commit.
+
+2) NETLIFY — publicar a partir do GitHub
+   a. app.netlify.com > Add new project > Import an existing project > GitHub.
+   b. Escolha o repositório. Build command: deixe vazio. Publish directory: deixe vazio (raiz).
+   c. Deploy. Depois troque o nome do projeto (ex.: encantoshome -> encantoshome.netlify.app).
+
+3) LOGIN DO PAINEL (GitHub OAuth via Netlify)
+   a. No GitHub: Settings > Developer settings > OAuth Apps > New OAuth App
+      (ou github.com/settings/developers).
+      - Application name: Encantos Admin
+      - Homepage URL: https://encantoshome.netlify.app (o seu endereço)
+      - Authorization callback URL:  https://api.netlify.com/auth/done
+      Salve, copie o Client ID e gere um Client Secret (copie na hora).
+   b. No Netlify: Project configuration > Security > OAuth >
+      Install provider > GitHub > cole Client ID e Client Secret.
+
+4) ACESSO DA SUA MÃE
+   a. Ela cria uma conta grátis no GitHub.
+   b. No repositório: Settings > Collaborators > Add people > usuário dela.
+   c. Ela aceita o convite (chega por e-mail).
+
+------------------------------------------------------------
+USO NO DIA A DIA (pelo celular ou computador)
+------------------------------------------------------------
+1. Abrir  SEU-SITE/admin  > "Entrar com GitHub".
+2. Catálogo > Peças.
+3. Nova peça: "Adicionar peça" (ela entra no topo da lista e aparece primeiro na categoria).
+   - Foto: escolher da galeria ou tirar na hora.
+   - Código: 2 letras + número (ex.: PU13). Não repita códigos.
+   - "Mostrar a foto inteira": marque quando a foto não puder ser cortada.
+4. Editar: toque na peça da lista, altere e salve.
+5. Excluir: abra a peça e use o X / "Remover" do item.
+6. Toque em "Publicar" (Publish) no topo. Em 1–2 minutos o site atualiza.
+
+Fotos grandes do celular funcionam: o site reduz o tamanho automaticamente
+na hora de mostrar (otimizador de imagens do Netlify).
+
+Categoria nova: as opções ficam em admin/config.yml (campo "options").
+Já deixei extras prontas: Tornozeleiras, Correntes, Kits. Categorias sem peças não aparecem no site.
+
+------------------------------------------------------------
+DEPOIS DE PUBLICAR (1 vez)
+------------------------------------------------------------
+No index.html, troque ENDERECO-DO-SITE pelo endereço real (ex.: encantoshome.netlify.app),
+para o logo aparecer quando o link for mandado no WhatsApp/Instagram.
+
+Domínio próprio (opcional): compre em registro.br e adicione no Netlify em
+Domain management > Add a domain. Funciona com o painel normalmente.
+
+Link direto para uma peça: SEU-SITE/#PU04

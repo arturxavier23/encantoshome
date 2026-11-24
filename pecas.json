@@ -1,0 +1,388 @@
+{
+  "pecas": [
+    {
+      "cod": "AN01",
+      "nome": "Anel coração trançado",
+      "cat": "Anéis",
+      "desc": "Coração vazado com ponto de luz",
+      "foto": "/fotos/an01.webp",
+      "inteira": false
+    },
+    {
+      "cod": "AN02",
+      "nome": "Anel corações cravejado",
+      "cat": "Anéis",
+      "desc": "Dois aros com dois corações",
+      "foto": "/fotos/an02.webp",
+      "inteira": false
+    },
+    {
+      "cod": "AN03",
+      "nome": "Anel Espírito Santo redondo",
+      "cat": "Anéis",
+      "desc": "Moldura circular com zircônias",
+      "foto": "/fotos/an03.webp",
+      "inteira": false
+    },
+    {
+      "cod": "AN04",
+      "nome": "Anel estrela-do-mar",
+      "cat": "Anéis",
+      "desc": "Com dois pontos de luz",
+      "foto": "/fotos/an04.webp",
+      "inteira": false
+    },
+    {
+      "cod": "AN05",
+      "nome": "Anel Nossa Senhora Aparecida",
+      "cat": "Anéis",
+      "desc": "Medalha oval com zircônias",
+      "foto": "/fotos/an05.webp",
+      "inteira": false
+    },
+    {
+      "cod": "AN06",
+      "nome": "Anel Espírito Santo retangular",
+      "cat": "Anéis",
+      "desc": "Moldura cravejada",
+      "foto": "/fotos/an06.webp",
+      "inteira": false
+    },
+    {
+      "cod": "BR01",
+      "nome": "Argola coração",
+      "cat": "Brincos",
+      "desc": "Argola fina em formato de coração",
+      "foto": "/fotos/br01.webp",
+      "inteira": false
+    },
+    {
+      "cod": "BR02",
+      "nome": "Argola maxi com botão",
+      "cat": "Brincos",
+      "desc": "Argola larga e leve",
+      "foto": "/fotos/br02.webp",
+      "inteira": false
+    },
+    {
+      "cod": "BR03",
+      "nome": "Brinco gota cravejado",
+      "cat": "Brincos",
+      "desc": "Gota vazada com zircônias",
+      "foto": "/fotos/br03.webp",
+      "inteira": false
+    },
+    {
+      "cod": "BR04",
+      "nome": "Brinco flor de pérolas",
+      "cat": "Brincos",
+      "desc": "Pétalas perolizadas e ponto de luz",
+      "foto": "/fotos/br04.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO01",
+      "nome": "Colar terço com zircônias",
+      "cat": "Colares",
+      "desc": "Medalha e crucifixo",
+      "foto": "/fotos/co01.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO02",
+      "nome": "Colar Nossa Senhora Aparecida",
+      "cat": "Colares",
+      "desc": "Pingente cravejado em corrente veneziana",
+      "foto": "/fotos/co02.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO03",
+      "nome": "Colar Espírito Santo cravejado",
+      "cat": "Colares",
+      "desc": "Corrente singapura",
+      "foto": "/fotos/co03.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO04",
+      "nome": "Colar flor de pérolas",
+      "cat": "Colares",
+      "desc": "Combina com o brinco BR04",
+      "foto": "/fotos/co04.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO05",
+      "nome": "Colar borboleta",
+      "cat": "Colares",
+      "desc": "Asa vazada e asa cravejada",
+      "foto": "/fotos/co05.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PI01",
+      "nome": "Pingente cruz cravejada",
+      "cat": "Pingentes",
+      "desc": "Cruz fina com zircônias",
+      "foto": "/fotos/pi01.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PI02",
+      "nome": "Pingente Espírito Santo",
+      "cat": "Pingentes",
+      "desc": "Asas cravejadas",
+      "foto": "/fotos/pi02.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU01",
+      "nome": "Pulseira de bolas",
+      "cat": "Pulseiras",
+      "desc": "Três esferas em corrente de elos",
+      "foto": "/fotos/pu01.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU02",
+      "nome": "Pulseira trançada",
+      "cat": "Pulseiras",
+      "desc": "Malha trançada com fecho lagosta",
+      "foto": "/fotos/pu02.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU03",
+      "nome": "Pulseira de corações",
+      "cat": "Pulseiras",
+      "desc": "Elos em formato de coração",
+      "foto": "/fotos/pu03.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU04",
+      "nome": "Pulseira Nossa Senhora Aparecida",
+      "cat": "Pulseiras",
+      "desc": "Medalha com dois pontos de luz",
+      "foto": "/fotos/pu04.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU05",
+      "nome": "Pulseira São Bento",
+      "cat": "Pulseiras",
+      "desc": "Medalha com dois pontos de luz",
+      "foto": "/fotos/pu05.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU06",
+      "nome": "Pulseira nó",
+      "cat": "Pulseiras",
+      "desc": "Malha dupla com nó central",
+      "foto": "/fotos/pu06.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU07",
+      "nome": "Pulseira de argolas",
+      "cat": "Pulseiras",
+      "desc": "Argolas diamantadas entrelaçadas",
+      "foto": "/fotos/pu07.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU08",
+      "nome": "Pulseira cordão baiano",
+      "cat": "Pulseiras",
+      "desc": "Fina e delicada",
+      "foto": "/fotos/pu08.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU09",
+      "nome": "Pulseira de bolinhas",
+      "cat": "Pulseiras",
+      "desc": "Versão delicada com esferas menores",
+      "foto": "/fotos/pu09.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CJ01",
+      "nome": "Conjunto coração cravejado",
+      "cat": "Conjuntos",
+      "desc": "Colar e brincos",
+      "foto": "/fotos/cj01.webp",
+      "inteira": false
+    },
+    {
+      "cod": "AN07",
+      "nome": "Anel corações vazados",
+      "cat": "Anéis",
+      "desc": "Coração central entre dois corações menores",
+      "foto": "/fotos/an07.webp",
+      "inteira": false
+    },
+    {
+      "cod": "AN08",
+      "nome": "Anel ondulado",
+      "cat": "Anéis",
+      "desc": "Aro liso em onda",
+      "foto": "/fotos/an08.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CJ02",
+      "nome": "Conjunto gota",
+      "cat": "Conjuntos",
+      "desc": "Colar e brincos com pedra gota",
+      "foto": "/fotos/cj02.webp",
+      "inteira": true
+    },
+    {
+      "cod": "BR05",
+      "nome": "Brinco 2 em 1 ponto de luz",
+      "cat": "Brincos",
+      "desc": "Use só o ponto de luz ou com a pedra de baixo",
+      "foto": "/fotos/br05.webp",
+      "inteira": false
+    },
+    {
+      "cod": "BR06",
+      "nome": "Brinco triângulo com disco",
+      "cat": "Brincos",
+      "desc": "Maxi brinco geométrico",
+      "foto": "/fotos/br06.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO06",
+      "nome": "Colar ponto de luz",
+      "cat": "Colares",
+      "desc": "Pedra redonda em corrente fina",
+      "foto": "/fotos/co06.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO07",
+      "nome": "Colar ponto de luz grande",
+      "cat": "Colares",
+      "desc": "Pedra maior em corrente cordão",
+      "foto": "/fotos/co07.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO08",
+      "nome": "Cordão baiano",
+      "cat": "Colares",
+      "desc": "Corrente torcida encorpada",
+      "foto": "/fotos/co08.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO09",
+      "nome": "Colar malha laminada",
+      "cat": "Colares",
+      "desc": "Corrente lisa e brilhante",
+      "foto": "/fotos/co09.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO10",
+      "nome": "Corrente de corações",
+      "cat": "Colares",
+      "desc": "Elos vazados em formato de coração",
+      "foto": "/fotos/co10.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO11",
+      "nome": "Terço longo de bolinhas",
+      "cat": "Colares",
+      "desc": "Medalha e crucifixo",
+      "foto": "/fotos/co11.webp",
+      "inteira": false
+    },
+    {
+      "cod": "CO12",
+      "nome": "Colar bolinha",
+      "cat": "Colares",
+      "desc": "Esfera delicada em corrente veneziana",
+      "foto": "/fotos/co12.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PI03",
+      "nome": "Pingente gota lisa",
+      "cat": "Pingentes",
+      "desc": "Gota polida",
+      "foto": "/fotos/pi03.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PI04",
+      "nome": "Pingente mandala de corações",
+      "cat": "Pingentes",
+      "desc": "Corações cravejados com pérola",
+      "foto": "/fotos/pi04.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PI05",
+      "nome": "Pingente trevo com pérola",
+      "cat": "Pingentes",
+      "desc": "Pétalas cravejadas",
+      "foto": "/fotos/pi05.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PI06",
+      "nome": "Pingente flor com pérola",
+      "cat": "Pingentes",
+      "desc": "Flor cravejada",
+      "foto": "/fotos/pi06.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PI07",
+      "nome": "Pingente coração cravejado",
+      "cat": "Pingentes",
+      "desc": "Coração com zircônias",
+      "foto": "/fotos/pi07.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PI08",
+      "nome": "Pingente flor ponto de luz",
+      "cat": "Pingentes",
+      "desc": "Quatro pétalas cravejadas e pedra central",
+      "foto": "/fotos/pi08.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU10",
+      "nome": "Pulseira de elos",
+      "cat": "Pulseiras",
+      "desc": "Elos redondos delicados",
+      "foto": "/fotos/pu10.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU11",
+      "nome": "Pulseira pedras coloridas",
+      "cat": "Pulseiras",
+      "desc": "Cristais retangulares coloridos",
+      "foto": "/fotos/pu11.webp",
+      "inteira": false
+    },
+    {
+      "cod": "PU12",
+      "nome": "Pulseira elos diamantados",
+      "cat": "Pulseiras",
+      "desc": "Argolas texturizadas com extensor",
+      "foto": "/fotos/pu12.webp",
+      "inteira": false
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+# Painel de administração do catálogo Encantos (Decap CMS)
+# Repositório: arturxavier23/encantoshome
+backend:
+  name: github
+  repo: arturxavier23/encantoshome
+  branch: main
+  commit_messages:
+    update: "Catálogo: {{slug}} atualizado"
+
+locale: pt
+site_url: /
+display_url: /
+logo_url: /img/icone.png
+
+media_folder: fotos
+public_folder: /fotos
+
+collections:
+  - name: catalogo
+    label: Catálogo
+    editor:
+      preview: false
+    files:
+      - name: pecas
+        label: Peças
+        file: pecas.json
+        fields:
+          - name: pecas
+            label: Peças
+            label_singular: peça
+            widget: list
+            add_to_top: true
+            collapsed: true
+            summary: "{{fields.cod}} · {{fields.nome}}"
+            fields:
+              - { name: foto, label: Foto, widget: image, choose_url: false, required: false }
+              - { name: inteira, label: "Mostrar a foto inteira (sem cortar)", widget: boolean, default: false, required: false }
+              - { name: cod, label: "Código (ex.: PU13)", widget: string, pattern: ['^[A-Za-z]{2}\d{2,3}$', "Use 2 letras e 2 números, ex.: PU13"] }
+              - { name: nome, label: Nome da peça, widget: string }
+              - name: cat
+                label: Categoria
+                widget: select
+                options: ["Anéis", "Brincos", "Colares", "Pingentes", "Pulseiras", "Conjuntos", "Tornozeleiras", "Correntes", "Kits"]
+              - { name: desc, label: Descrição curta, widget: string, required: false }
